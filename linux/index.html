@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AoM on Linux in 2024</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation about how to play Age of Empires II on Linux, up-to-date for 2024">
+    <link rev="made" href="mailto:jroquet@arkanosis.net" />
+    <link rel="canonical" href="https://aom.arkanosis.net/linux/" />
+    <style>
+      * {
+        color: #212529;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #24478f;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      header, footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #eaecf0;
+      }
+      footer {
+        bottom:0;
+      }
+      main {
+        margin: 0 auto;
+        max-width: 100ex;
+        text-align: justify;
+        hyphens: auto;
+      }
+      form {
+        padding: 15px;
+      }
+      .info {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+        border-radius: 4px;
+      }
+      .info, .info strong {
+        color: #3e656b;
+      }
+      .warning {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        border-radius: 4px;
+      }
+      .warning, .warning strong, .warning ul li {
+        color: #8a6d3b;
+      }
+      .error {
+        margin: 15px auto;
+        max-width: 100ex;
+        padding: 15px;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        border-radius: 4px;
+      }
+      .error, .error strong {
+        color: #721c24;
+      }
+      .details {
+        background-color: #eaecf0;
+        padding: 0 15px;
+        border-style: dashed;
+        border-color: gray;
+      }
+      .version {
+        margin-bottom: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align:right;
+      }
+      table {
+        text-align: left;
+        width: 100%;
+      }
+      th, td {
+        border-bottom: 1px solid #ddd;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      td span {
+        text-decoration: underline dotted #24478f;
+      }
+      img {
+        max-width: 95%;
+      }
+      pre {
+        white-space: pre-line;
+      }
+      code, pre, tt {
+        background-color: #eaecf0;
+      }
+      .details code, .details pre, .details tt {
+        background-color: white;
+      }
+      .anchor {
+        margin-left: -1em;
+        color: gray;
+        visibility: hidden;
+      }
+      h2:hover .anchor, h3:hover .anchor, h4:hover .anchor {
+        visibility: visible;
+      }
+      @media(min-width: 1600px) {
+        nav {
+          position: fixed;
+        }
+      }
+      nav {
+        margin: 0 auto;
+        max-width: 100ex;
+        line-height: 2em;
+      }
+      nav h2 {
+        padding-left: 15px;
+      }
+      nav ul {
+        list-style: none;
+        padding-left: 15px;
+      }
+      nav a:active {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--<img src="logo.svg" alt="AoM on Linux logo" width="120" height="120" style="padding: 10px;">-->
+      <div style="margin-left: 10px; padding: 10px;"><h1 style="font-size: 50px; margin:0;">AoM on Linux in 2024</h1></div>
+    </header>
+    <nav>
+      <h2>Table of content</h2>
+      <ul>
+        <li>How do I play?<ul>
+          <li><a href="#how_do_i_play_aom_r_on_linux">Single player</a></li>
+          <li><a href="#aom_r_online_multiplayer">Online multiplayer</a></li>
+          <li><a href="#aom_r_troubleshooting">Troubleshooting</a></li>
+        </ul></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+      </ul>
+    </nav>
+    <main style="padding: 10px">
+      <section>
+        <h2 id="how_do_i_play_aom_r_on_linux">
+          <a href="#how_do_i_play_aom_r_on_linux" class="anchor" aria-hidden="true">§</a>
+          How do I play <i>Age of Mythology: Retold</i> on Linux?
+        </h2>
+        <section>
+          <h3>
+            <a href="#how_do_i_play_aom_r_on_linux" class="anchor" aria-hidden="true">§</a>
+            Single player
+          </h3>
+          <ol>
+            <li>Install Steam (the Linux version).</li>
+            <li>Start Steam and log in.</li>
+            <li>Open the “Steam” menu (1), then “Settings” (2).</li>
+            <a href="./1.png"><img src="./1.png" alt="Screenshot of the Steam client with the “Steam” menu open, and the “Settings” entry highlighted"></a>
+            <li>Go to the “Compatibility” section (1) and check the “Enable Steam Play for all other titles” box (2). You can leave the “Run other titles with” dropdown list (3) to its default value.</li>
+            <a href="./2.png"><img src="./2.png" alt="Screenshot of the Steam client “Settings” window, on the “Compatibility” tab, with the “Enable Steam Play for all other titles” box checked"></a>
+            <li>Now, AoM:R should be available in your Steam library as it would be if you were on Windows. Install the game.</li>
+            <li>Start the game.</li>
+          </ol>
+          <p>At this point, the game should work fine <em>in single player mode</em>. If you want to play <em><u>online multiplayer</u></em>, however, keep on reading.</p>
+        </section>
+        <section>
+          <h3 id="aom_r_online_multiplayer">
+            <a href="#aom_r_online_multiplayer" class="anchor" aria-hidden="true">§</a>
+            Online multiplayer
+          </h3>
+          <p>Ignoring what follows won't prevent you from enjoying single player mode, but you'll encounter synchronization issues after a few seconds of playing online.</p>
+          <ol>
+            <li>Quit the game (it is important that you have started it at least once before the next step).</li>
+            <li>Open a terminal.</li>
+            <li>Execute the following commands (every single character is important, including the quotes):<ul>
+                <li><code>cd "$(mktemp -d)"</code></li>
+                <li><code>wget "https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe"</code></li>
+                <li><code>cabextract vc_redist.x64.exe</code></li>
+                <li><code>cabextract a10</code></li>
+                <li>If you're using Steam from your distribution's package manager (<code>apt</code>, <code>pacman</code>…) or SteamOS (eg. on the Steam Deck), run these commands:</li><ul>
+                    <li><code>chmod u+w ~/.steam/steam/steamapps/compatdata/1934680/pfx/drive_c/windows/system32/ucrtbase.dll</code></li>
+                    <li><code>yes | cp ucrtbase.dll ~/.steam/steam/steamapps/compatdata/1934680/pfx/drive_c/windows/system32</code></li>
+                </ul></li>
+                <li>If you're using Steam from Flathub / Flatpak, run this command instead:</li><ul>
+                    <li><code>cp ucrtbase.dll ~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/compatdata/1934680/pfx/drive_c/windows/system32/</code></li>
+                </ul></li>
+            <li>Start the game again.</li>
+          </ol>
+          <p>At this point, the game should work fine in online multiplayer as well. Once in the game, you shouldn't see any difference compared to when playing on Windows.</p>
+          <aside class="details">
+            <p>The above commands will only work if you have <tt>wget</tt> and <tt>cabextract</tt> installed. Fortunately, most Linux distributions make it very straightforward to install them.</p>
+            <p>For example, on ArchLinux and Manjaro, you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following command:<ul>
+                  <li><code>sudo pacman -S wget cabextract</code></li>
+              </ul></li>
+            </ol>
+            <p>On Debian, Ubuntu, Mint and Pop!_OS, you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following command:<ul>
+                  <li><code>sudo apt install wget cabextract</code></li>
+              </ul></li>
+            </ol>
+            <p>It is a bit more complex on a Steam Deck with SteamOS, because the filesystem is read-only by default, so you'd install them as follow:</p>
+            <ol>
+              <li>Open a terminal.</li>
+              <li>Execute the following commands:<ul>
+                  <li><code>sudo steamos-readonly disable</code></li>
+                  <li><code>sudo pacman-key --init</code></li>
+                  <li><code>sudo pacman-key --populate holo</code></li>
+                  <li><code>sudo pacman -S wget cabextract</code></li>
+                  <li><code>sudo steamos-readonly enable</code></li>
+              </ul></li>
+            </ol>
+        </section>
+        <section>
+          <h3 id="aom_r_troubleshooting">
+            <a href="#aom_r_troubleshooting" class="anchor" aria-hidden="true">§</a>
+            Troubleshooting
+          </h3>
+        </section>
+        <aside>
+          <h3>Other places to find more information about Age of Mythology: Retold on Linux</h3>
+          <ul>
+            <li><a href="https://www.protondb.com/app/1934680">Age of Mythology: Retold on ProtonDB</a></li>
+          </ul>
+        </aside>
+      </section>
+      <section>
+        <h2 id="acknowledgements">
+          <a href="#acknowledgements" class="anchor" aria-hidden="true">§</a>
+          Acknowledgements
+        </h2>
+        <p>There's a very long list of people to thank for being able to play AoM on Linux. Of course, this would not have been possible without the efforts behind the Wine project since 1993 and behind the DXVK and Proton projects since 2017. But individuals from the AoE2 on Linux community have been helping a lot as well (yes, AoE2: this page is mostly adapted from the <a href="https://aoe2.arkanosis.net/linux/">AoE2 on Linux</a> page), through Wine's AppDB, ProtonDB, GitHub, Reddit, Discord…</p>
+        <p>Everything described on this page is the result of many people tireless attempts at making games work on Linux and their willingness to share their discoveries with everybody.</p>
+        <p>Thanks everyone, GL HF!</p>
+      </section>
+      <p class="version">
+        Last update (<a href="https://github.com/ArkanosisNet/aom.arkanosis.net/commits/master">changelog</a>) on 2024-08-28 (<a href="https://www.ageofempires.com/news/age-of-mythology-retold-now-in-advanced-access/">AoM:R advanced access</a>)
+      </p>
+    </main>
+    <footer>
+      <p style="width: 100%; text-align: center;">
+        Made by <a href="https://arkanosis.net">Arkanosis</a>.
+        Text available <a href="https://github.com/ArkanosisNet/aom.arkanosis.net">on GitHub</a> under the <a href="https://creativecommons.org/licenses/by/4.0/deed">the CC-BY 4.0 license</a>.
+      </p>
+    </footer>
+  </body>
+</html>
